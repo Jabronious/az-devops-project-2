@@ -1,0 +1,7 @@
+[defaults]
+group = jarrodmerrymanudacity_rg_Linux_centralus
+sku = P1V2
+appserviceplan = jarrodmerrymanudacity_asp_Linux_centralus_0
+location = centralus
+web = az-devops-project-2
+
