@@ -22,6 +22,10 @@ This project is a complete CI/CD pipeline of a Flask app that makes a sklearn pr
 <TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
 
 * Project running on Azure App Service
+    - Once the repo has been cloned into the Cloud Shell run `cd az devops-project-2`
+    - run `az webapp up -n az-devops-project-2`
+    - The app should now be acceissble at `https://az-devops-project-2.azurewebsites.net/`
+    ![image](https://user-images.githubusercontent.com/14021591/129961207-d97cbf99-0c3b-421c-80b5-7d1c177000d2.png)
 
 * Project cloned into Azure Cloud Shell
     - On the cloud shell on Azure, open and run `ssh-keygen -t rsa`.
@@ -33,25 +37,27 @@ This project is a complete CI/CD pipeline of a Flask app that makes a sklearn pr
 
 
 * Passing tests that are displayed after running the `make all` command from the `Makefile`
+    ![image](https://user-images.githubusercontent.com/14021591/129960105-7f55d27d-b270-44b0-9a4a-47746c0ae0fe.png)
 
 * Output of a test run
+    ![image](https://user-images.githubusercontent.com/14021591/129960673-76d184bf-c170-42f3-90f0-64b8e3873a2b.png)
 
 * Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
+    - On [Azure Devops](https://dev.azure.com/) select `+ New Project`
+        ![image](https://user-images.githubusercontent.com/14021591/129962492-d9861d7b-a417-4fe5-aa00-99ace113dae6.png)
+    - Input a unique/identfying name for the project and then "Create"
+    - Navigate to pipelines and then create new pipeline. When prompted select `Github Yaml`.
+    - Find the repo you need (`az-devops-project-2` if you are cloning from this repo)
+    - Then select `Run`
 
 * Running Azure App Service from Azure Pipelines automatic deployment
 
-* Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
-The output should look similar to this:
-
-```bash
-udacity@Azure:~$ ./make_predict_azure_app.sh
-Port: 443
-{"prediction":[20.35373177134412]}
-```
+* Successful prediction from deployed flask app in Azure Cloud Shell.
+    - This can be achieve by running `./make_predict_azure_app.sh` from the root o
+    ![image](https://user-images.githubusercontent.com/14021591/129961455-edc6e6a9-f589-4893-b1ff-b58946bb1525.png)
 
 * Output of streamed log files from deployed application
-
-> 
+    ![image](https://user-images.githubusercontent.com/14021591/129962109-490fc329-ea71-460f-aca1-5c913d118142.png)
 
 ## Enhancements
 
