@@ -24,6 +24,13 @@ This project is a complete CI/CD pipeline of a Flask app that makes a sklearn pr
 * Project running on Azure App Service
 
 * Project cloned into Azure Cloud Shell
+    - On the cloud shell on Azure, open and run `ssh-keygen -t rsa`.
+    - Run `cat ~/.ssh/id_rsa.pub` and then copy the outputed key
+    - Go the `SSH and GPG Keys` and then Create new SSH Key with the copid text from the previous step
+    - Finally, on the Cloud Shell run `git clone git@github.com:Jabronious/az-devops-project-2.git`
+    - Recreate screen shot below using `ls`
+    ![image](https://user-images.githubusercontent.com/14021591/129959169-cdfc890f-af2b-4b24-8297-b7fbf5efbfdc.png)
+
 
 * Passing tests that are displayed after running the `make all` command from the `Makefile`
 
