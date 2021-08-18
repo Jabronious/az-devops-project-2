@@ -6,7 +6,7 @@
 
 # Overview
 
-<TODO: complete this with an overview of your project>
+This project is a complete CI/CD pipeline of a Flask app that makes a sklearn prediction. It is a complete pipeline that starts all the way from the source control that is being hosted on the GitHub GUI that we are using all the way through to the deployment on Azure. In between those two points in the pipeline we have Github Actions that ensures code quality using `pylint` and code coverage using `pytest` (coupled with `pytest-cov`). After that it also includes a working Azure pipeline that takes care of the deployment of the code. All of this is handled off the `main` branch and is triggered any time a merge or push occurs on the said branch thus ensuring that the code we write is of the upmost quality.
 
 ## Project Plan
 <TODO: Project Plan
@@ -16,8 +16,8 @@
 
 ## Instructions
 
-<TODO:  
-* Architectural Diagram (Shows how key parts of the system work)>
+* Architectural Diagram:  
+![image](https://user-images.githubusercontent.com/14021591/129821847-1c9d4549-aa44-4046-843c-915ea03ed05c.png)
 
 <TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
 
