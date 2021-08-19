@@ -19,8 +19,6 @@ This project is a complete CI/CD pipeline of a Flask app that makes a sklearn pr
 * Architectural Diagram:  
 ![image](https://user-images.githubusercontent.com/14021591/129821847-1c9d4549-aa44-4046-843c-915ea03ed05c.png)
 
-<TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
-
 * Project running on Azure App Service
     - Once the repo has been cloned into the Cloud Shell run `cd az devops-project-2`
     - run `az webapp up -n az-devops-project-2`
@@ -39,11 +37,11 @@ This project is a complete CI/CD pipeline of a Flask app that makes a sklearn pr
 * Passing tests that are displayed after running the `make all` command from the `Makefile`
     ![image](https://user-images.githubusercontent.com/14021591/129960105-7f55d27d-b270-44b0-9a4a-47746c0ae0fe.png)
 
-* Output of a test run
+* Output of a test run  
     ![image](https://user-images.githubusercontent.com/14021591/129960673-76d184bf-c170-42f3-90f0-64b8e3873a2b.png)
 
 * Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
-    - On [Azure Devops](https://dev.azure.com/) select `+ New Project`
+    - On [Azure Devops](https://dev.azure.com/) select `+ New Project`  
         ![image](https://user-images.githubusercontent.com/14021591/129962492-d9861d7b-a417-4fe5-aa00-99ace113dae6.png)
     - Input a unique/identfying name for the project and then "Create"
     - Navigate to pipelines and then create new pipeline. When prompted select `Github Yaml`.
@@ -51,6 +49,10 @@ This project is a complete CI/CD pipeline of a Flask app that makes a sklearn pr
     - Then select `Run`
 
 * Running Azure App Service from Azure Pipelines automatic deployment
+    - After a push occurs to the `main` branch the Azure Pipeline Begins:  
+      ![image](https://user-images.githubusercontent.com/14021591/129995033-92c120c9-b4af-45a2-aef5-cdd454da727e.png)
+    - Once the Build step completes you will see the Deploy step begin and once everything is successful you will see this:  
+      ![image](https://user-images.githubusercontent.com/14021591/129995125-f71334dd-54bb-46af-974f-c3016ae2f52d.png)
 
 * Successful prediction from deployed flask app in Azure Cloud Shell.
     - This can be achieve by running `./make_predict_azure_app.sh` from the root o
