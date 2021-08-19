@@ -62,7 +62,8 @@ This project is a complete CI/CD pipeline of a Flask app that makes a sklearn pr
 
 ## Enhancements
 
-<TODO: A short description of how to improve the project in the future>
+- Add more test cases to ensure more coverage.
+- Create GUI that will allow for easier prediction execution outside of command line tools
 
 ## Demo 
 
