@@ -67,5 +67,5 @@ This project is a complete CI/CD pipeline of a Flask app that makes a sklearn pr
 
 ## Demo 
 
-<TODO: Add link Screencast on YouTube>
+[Youtube Link](https://youtu.be/tClwOaNFQsU)
 
