@@ -39,6 +39,10 @@ This project is a complete CI/CD pipeline of a Flask app that makes a sklearn pr
 * Passing tests that are displayed after running the `make all` command from the `Makefile`
     ![image](https://user-images.githubusercontent.com/14021591/129960105-7f55d27d-b270-44b0-9a4a-47746c0ae0fe.png)
 
+* Load Testing with Locust:  
+    - Output from headless:  
+    ![image](https://user-images.githubusercontent.com/14021591/130286581-5e284516-4d56-4444-89c6-5ffc973d342d.png)
+
 * Output of a test run  
     ![image](https://user-images.githubusercontent.com/14021591/129960673-76d184bf-c170-42f3-90f0-64b8e3873a2b.png)
 
