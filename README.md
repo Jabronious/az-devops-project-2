@@ -23,6 +23,9 @@ This project is a complete CI/CD pipeline of a Flask app that makes a sklearn pr
     - run `az webapp up -n az-devops-project-2`
     - The app should now be acceissble at `https://az-devops-project-2.azurewebsites.net/`
     ![image](https://user-images.githubusercontent.com/14021591/129961207-d97cbf99-0c3b-421c-80b5-7d1c177000d2.png)
+    - Here is the app running in azure app services:  
+    ![image](https://user-images.githubusercontent.com/14021591/130264028-82dcc073-65b9-40e7-8543-9dace5537753.png)
+
 
 * Project cloned into Azure Cloud Shell
     - On the cloud shell on Azure, open and run `ssh-keygen -t rsa`.
